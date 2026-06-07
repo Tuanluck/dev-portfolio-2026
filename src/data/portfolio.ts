@@ -91,4 +91,13 @@ export const projects: Project[] = [
     codeUrl: "https://github.com/Tuanluck/samar",
     liveUrl: "https://sarma.netlify.app/",
   },
+  {
+    title: "Personal Portfolio Website",
+    description:
+      "A personal portfolio website built with React and Tailwind CSS, showcasing projects, skills, and experience with a modern design and responsive layout.",
+    category: "frontend",
+    icon: "portfolio",
+    tech: ["ReactJS", "TypeScript", "Tailwind CSS", "Vite"],
+    codeUrl: "https://github.com/Tuanluck/Personal-Portfolio",
+  }
 ]
