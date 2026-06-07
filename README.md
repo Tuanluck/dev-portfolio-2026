@@ -1,73 +1,114 @@
-# React + TypeScript + Vite
+# Nguyen Anh Tuan Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal portfolio website built to present my background, technical skills, featured projects, CV, and contact information. The site is designed with a clean dark interface, smooth animations, responsive layouts, and a project-focused structure.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio highlights:
 
-## React Compiler
+- Personal introduction and career direction
+- Education timeline
+- Technical skills with technology logos
+- Featured projects with separate source code and live demo links
+- CV download section
+- Contact information and social links
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React
+- React Icons
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Fully responsive layout for desktop, tablet, and mobile
+- Animated hero section with personal profile image
+- Dynamic typing effect for roles
+- Scroll progress indicator
+- Section reveal animations
+- Filterable projects by category
+- Reusable data-driven portfolio content
+- Organized component and section structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```txt
+src/
+  assets/          Static images and personal assets
+  components/      Reusable UI components
+  data/            Portfolio content and project data
+  hooks/           Custom React hooks
+  sections/        Main page sections
+  App.tsx          Application layout
+  index.css        Global styles and animations
+  main.tsx         React entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Install Node.js and npm before running the project.
+
+### Installation
+
+```bash
+npm install
 ```
+
+### Development
+
+```bash
+npm run dev
+```
+
+The app will start locally using Vite.
+
+### Production Build
+
+```bash
+npm run build
+```
+
+### Preview Build
+
+```bash
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## Customization
+
+Most portfolio content is managed from:
+
+```txt
+src/data/portfolio.ts
+```
+
+Update this file to change:
+
+- Personal information
+- Roles
+- Education
+- Skills
+- Project details
+- Project source code and live demo links
+
+## Contact
+
+- Email: nguyenanhtuan9690@gmail.com
+- GitHub: [Tuanluck](https://github.com/Tuanluck)
+- Location: Binh Thanh, TP.HCM
+
+## Author
+
+Nguyen Anh Tuan  
+Software Engineer Intern
